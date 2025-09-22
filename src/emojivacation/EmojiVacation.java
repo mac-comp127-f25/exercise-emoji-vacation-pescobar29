@@ -78,10 +78,14 @@ public class EmojiVacation {
             family.add(createRandomEmoji(adultSize));
         }
 
+        for (int i = 0; i < adultCount; i++) {
+            family.add(createRandomEmoji(childSize));
+        }
+
         return family;
     }
 
-        private static GraphicsGroup createRandomEmoji(double size) {
+    private static GraphicsGroup createRandomEmoji(double size) {
         if (percentChance(20)){
             return ProvidedEmojis.createFrownyFace(size);
         }
@@ -110,7 +114,6 @@ public class EmojiVacation {
             emoji.setPosition(currentX, baselineY-height);
             currentX += width + spacing;
         }
-
     }
 
     // –––––– Scenery ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
