@@ -344,7 +344,6 @@ public class EmojiVacation {
         }
         return group;
     }
-
     // –––––– Randomness helpers –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
     /**
@@ -380,7 +379,6 @@ public class EmojiVacation {
             colorChannelVariation(color.getBlue(), amount),
             color.getAlpha());
     }
-
     /**
      * Varies the given value randomly, pinned to [0...255].
      */
